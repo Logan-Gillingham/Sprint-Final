@@ -1,0 +1,17 @@
+.checkout-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .complete-order-button {
+    padding: 10px 20px;
+    background-color: #f08804;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .complete-order-button:hover {
+    background-color: #e07b02;
+  }

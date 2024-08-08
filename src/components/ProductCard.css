@@ -1,0 +1,17 @@
+.product-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .quantity-container {
+    margin: 10px 0;
+  }
+  
+  input[type="number"] {
+    width: 50px;
+    margin-left: 5px;
+  }
