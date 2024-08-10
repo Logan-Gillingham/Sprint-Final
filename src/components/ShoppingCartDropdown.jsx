@@ -1,11 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useShoppingCart } from '../ShoppingCartContext';
-import './ShoppingCartDropdown.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useShoppingCart } from "../ShoppingCartContext";
+import "./ShoppingCartDropdown.css";
 
 const ShoppingCartDropdown = () => {
   const { cartItems, removeFromCart } = useShoppingCart();
-  const subtotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  const subtotal = cartItems.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
 
   return (
     <div className="cart-dropdown">
@@ -20,7 +23,12 @@ const ShoppingCartDropdown = () => {
                 <span>{item.name}</span>
                 <span>Qty: {item.quantity}</span>
                 <span>${item.price * item.quantity}</span>
-                <button onClick={() => removeFromCart(item)}>Remove</button>
+                <button
+                  className="remove-btn"
+                  onClick={() => removeFromCart(item)}
+                >
+                  Remove
+                </button>
               </li>
             ))}
           </ul>

@@ -1,20 +1,33 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useShoppingCart } from '../ShoppingCartContext';
-import './Header.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useShoppingCart } from "../ShoppingCartContext";
+import ShoppingCartDropdown from "./ShoppingCartDropdown";
+import "./Header.css";
 
 const Header = () => {
   const { cartItems } = useShoppingCart();
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownVisible(!isDropdownVisible);
+  };
 
   return (
     <header className="header">
-      <Link to="/" className="site-name">Pound Town</Link>
+      <Link to="" className="site-name">
+        Pound Town
+      </Link>
       <div className="cart-container">
-        <Link to="/cart" className="cart-icon">
-          <img src="/cart-icon.png" alt="Shopping Cart" />
+        <button onClick={toggleDropdown} className="cart-icon">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1413/1413908.png"
+            alt="placeholder"
+            className="cart-icon-img"
+          />
           <span className="cart-count">{totalItems}</span>
-        </Link>
+        </button>
+        {isDropdownVisible && <ShoppingCartDropdown />}
       </div>
     </header>
   );

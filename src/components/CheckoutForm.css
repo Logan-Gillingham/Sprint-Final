@@ -13,7 +13,7 @@
 input[type=text], input[type=email], select {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 2px 0; /* Reduced margin */
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -39,16 +39,4 @@ div {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-}
-
-.payment-options {
-  margin-top: 20px;
-}
-
-.payment-options h3 {
-  margin-bottom: 10px;
-}
-
-.payment-options div {
-  margin-bottom: 10px;
 }

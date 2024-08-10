@@ -1,5 +1,5 @@
-import React from 'react';
-import { useShoppingCart } from '../ShoppingCartContext';
+import React from "react";
+import { useShoppingCart } from "../ShoppingCartContext";
 
 const ShoppingCart = () => {
   const { cartItems, removeFromCart } = useShoppingCart();
