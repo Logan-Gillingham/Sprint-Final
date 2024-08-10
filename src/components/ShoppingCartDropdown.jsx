@@ -33,7 +33,7 @@ const ShoppingCartDropdown = () => {
             ))}
           </ul>
           <div className="subtotal">
-            <strong>Subtotal:</strong> ${subtotal}
+            <strong>Subtotal:</strong> ${subtotal.toFixed(2)}
           </div>
           <Link to="/checkout" className="checkout-button">
             Go to Checkout

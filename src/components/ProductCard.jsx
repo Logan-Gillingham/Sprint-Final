@@ -8,9 +8,10 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="product-card">
-      <h3>{product.name}</h3>
-      <p>{product.description}</p>
-      <p>${product.price}</p>
+      <img src={product.image} alt={product.name} className="product-image" />
+      <h3 className="product-name">{product.name}</h3>
+      <p className="product-description">{product.description}</p>
+      <p className="product-price">${product.price}</p>
       <div className="quantity-container">
         <label htmlFor={`quantity-${product.id}`}>Qty:</label>
         <input
@@ -21,7 +22,7 @@ const ProductCard = ({ product }) => {
           onChange={(e) => setQuantity(Number(e.target.value))}
         />
       </div>
-      <button onClick={() => addToCart({ ...product, quantity })}>
+      <button onClick={() => addToCart({ ...product, quantity })} className="add-to-cart-button">
         Add to Cart
       </button>
     </div>
