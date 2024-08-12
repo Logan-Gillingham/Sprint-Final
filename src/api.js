@@ -1,83 +1,227 @@
 const products = [
   {
     id: 1,
-    name: "Cocaine",
-    description: "1 pound of our finest angels dust",
-    price: 15999.99,
-    image: 'https://cdn.adf.org.au/media/images/cocaine-social.2e16d0ba.fill-1200x1200.jpg',
+    name: "Cannabis Indica",
+    description:
+      "1 dub  of our cannabis indicia, grow in the mountains of Peru",
+    price: 23.99,
+    image:
+      "https://media.post.rvohealth.io/wp-content/uploads/2021/01/Indica_Plant_732x549-thumbnail-732x549.jpg",
   },
   {
     id: 2,
-    name: "Heroin",
-    description: "A full pound of Heroin(*Needles not included)",
-    price: 29999.99,
-    image: 'https://www.usatoday.com/gcdn/authoring/authoring-images/2024/02/05/USAT/72487012007-getty-images-468584086.jpg?crop=3876,2180,x0,y121&width=3200&height=1800&format=pjpg&auto=webp',
+    name: "Sour diesel",
+    description: "A dub of our premium sour diesel, grown in the USA",
+    price: 36.45,
+    image:
+      "https://rythm.com/wp-content/uploads/RYTHM-Smokescape-SourDiesel-2.png",
   },
   {
     id: 3,
-    name: "Marijuana",
-    description: "A Premium pound of our special glazed kush",
-    price: 999.99,
-    image: 'https://www.verywellmind.com/thmb/m2VVBXgqiFcrWXrqwdvBmpRXDZ4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/marijuana-454601963-resized-569fd2345f9b58eba4ad583d.jpg',
+    name: "Kush",
+    description: "1lb pack of our premium kush, grown in the USA",
+    price: 1000.0,
+    image:
+      "https://hashonlinecanada.com/wp-content/uploads/2024/01/AAA-Lithium-OG-Kush.webp",
   },
   {
     id: 4,
-    name: "Mushrooms",
-    description: "Solid 1lb Pack of our dried magic mushrooms",
-    price: 1999.99,
-    image: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2023/10/Psilocybin-mushrooms-growing-1296x728-header-1024x575.jpg',
+    name: "Acapluco Gold",
+    description: "1lb pack of our premium Acapulco Gold, grown in Mexico",
+    price: 1999.0,
+    image: "https://www.cannaconnection.com/7536/acapulco-gold.jpg",
   },
   {
     id: 5,
-    name: "Crystal Meth",
-    description: "The clearest glass on the market comes in 1lb packages",
-    price: 12999.99,
-    image: 'https://cdn-01.drugfree.org/web/prod/wp-content/uploads/2019/10/19203018/pile-of-meth-crystals-10-31-19-e1686688226942.jpg',
+    name: "Blue Dream",
+    description: "1lb pack of our premium Blue Dream, grown in the USA",
+    price: 12999.0,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdutVCqxG0YyAdbv8Hgls3pRCXin5369it6w&s",
   },
   {
     id: 6,
-    name: "Fentanyl",
+    name: "cannabis ruderalis",
     description: "1lb package of pills",
-    price: 12999.99,
-    image: 'https://www.dea.gov/sites/default/files/styles/large/public/2022-12/Fentanyl_oxy_30mg_bulk%20pill%20spill_2.jpg?h=9f1e7607&itok=67q1H_pI',
+    price: 12999.0,
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Hanf05-w.jpg",
+  },
+  {
+    id: 7,
+    name: "Jack Herer",
+    description: "1lb pack of our premium Jack Herer, grown in the USA",
+    price: 14000.0,
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Jackherer.jpg",
+  },
+  {
+    id: 8,
+    name: "Purple Kush",
+    description: "1lb pack of our premium Purple Kush, grown in the USA",
+    price: 15000.0,
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Kush_close.jpg",
+  },
+  {
+    id: 9,
+    name: "Super Lemon Haze",
+    description: "1lb pack of our premium Super Lemon Haze, grown in the USA",
+    price: 15500.0,
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Kush_close.jpg",
+  },
+  {
+    id: 10,
+    name: "Northern Lights",
+    description: "1lb pack of our premium Northern Lights, grown in the USA",
+    price: 16000.0,
+    image:
+      "https://i.natgeofe.com/n/63527567-9a8b-4b08-819d-a6142fb2b350/aurora-kirkjufell-iceland_4x3.jpg",
+  },
+  {
+    id: 11,
+    name: "Hybrid",
+    description: "1lb pack of our premium Hybrid, grown in the USA",
+    price: 14000.0,
+    image:
+      "https://www.coloradoan.com/gcdn/presto/2019/03/11/PFTC/db3543f4-62b7-480b-94ab-5228c9b23b1b-GettyImages-886010078.jpg",
+  },
+  {
+    id: 12,
+    name: "Granddaddy Purple",
+    description: "1lb pack of our premium Granddaddy Purple, grown in the USA",
+    price: 12000.0,
+    image:
+      "https://circa1818.ca/wp-content/uploads/2023/02/grandaddy-purple-1024x819.jpg",
+  },
+  {
+    id: 13,
+    name: "Wedding Cake",
+    description: "1lb pack of our premium Wedding Cake, grown in the USA",
+    price: 14000.0,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOk385Qb6xKB8F-8nhJWDgI_Ql12Ofy9b4WA&s",
+  },
+  {
+    id: 14,
+    name: "Pineapple express",
+    description: "1 lb pack of our premium Pineapple Express, grown in the USA",
+    price: 13000.0,
+    image:
+      "https://images.leafly.com/flower-images/defaults/generic/strain-23.png?auto=compress%2Cformat&w=295&dpr=2",
+  },
+  {
+    id: 15,
+    name: "White Widow",
+    description: "1 lb pack of our premium White Widow, grown in the USA",
+    price: 15000.0,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLZ6hi26Xiw1pCbuq6pa8wx9XI3VhexiYHXQ&s",
+  },
+  {
+    id: 16,
+    name: "0G Kush",
+    description: "1 lb pack of our premium 0G Kush, grown in the USA",
+    price: 20000.0,
+    image: "https://images.leafly.com/flower-images/og-kush.png",
+  },
+  {
+    id: 17,
+    name: "Apple Fritter",
+    description: "1 lb pack of our premium Apple Fritter, grown in the USA",
+    price: 17000.0,
+    image:
+      "https://leafly-public.imgix.net/strains/photos/ziw0L3SZSIyM6uiLup73_AppleFritter%20(1).jpg",
+  },
+  {
+    id: 14,
+    name: "Pineapple express",
+    description: "1 lb pack of our premium Pineapple Express, grown in the USA",
+    price: 13000.0,
+    image:
+      "https://images.leafly.com/flower-images/defaults/generic/strain-23.png?auto=compress%2Cformat&w=295&dpr=2",
+  },
+  {
+    id: 15,
+    name: "White Widow",
+    description: "1 lb pack of our premium White Widow, grown in the USA",
+    price: 15000.0,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLZ6hi26Xiw1pCbuq6pa8wx9XI3VhexiYHXQ&s",
   },
 ];
 const equipment = [
-  { id: 1,
-    name: 'Bong', 
-    description: 'A must have with our premium Marijuana', 
-    price: 49.99, 
-    image: 'https://i.ebayimg.com/images/g/huoAAOSwQH1kdZWv/s-l1600.jpg' 
+  {
+    id: 1,
+    name: "Bong",
+    description: "A must have with our premium Marijuana",
+    price: 49.99,
+    image: "https://i.ebayimg.com/images/g/huoAAOSwQH1kdZWv/s-l1600.jpg",
   },
-  { id: 2,
-    name: 'Grinder', 
-    description: 'Need this to grind down all our valuable products', 
-    price: 39.99, 
-    image: 'https://www.vesselbrand.com/cdn/shop/products/MILL_GUNMETALWALNUT_EXPLODED_FRONTSHADOW_800_2048x.jpg?v=1661447792' 
+  {
+    id: 2,
+    name: "Grinder",
+    description: "Need this to grind down all our valuable products",
+    price: 39.99,
+    image:
+      "https://www.vesselbrand.com/cdn/shop/products/MILL_GUNMETALWALNUT_EXPLODED_FRONTSHADOW_800_2048x.jpg?v=1661447792",
   },
-  { id: 3,
-    name: 'Needles', 
-    description: 'Comes in a pack of 20 (Biohazardous materials)', 
-    price: 29.99, 
-    image: 'https://pim-resources.coleparmer.com/item/l/cadence-4186-needles-with-deflected-tips-20-gauge-length-6-2570111.jpg' 
+  {
+    id: 3,
+    name: "Weed backpack",
+    description: " A must have to carry all your favorite products",
+    price: 29.99,
+    image:
+      "https://i.etsystatic.com/24391578/r/il/50822e/3281130247/il_fullxfull.3281130247_shoc.jpg",
   },
-  { id: 4,
-    name: 'Lighters', 
-    description: '6 pack of our premium lighters for every time to smoke up', 
-    price: 14.99, 
-    image: 'https://i.ebayimg.com/images/g/nQcAAOSwVAtlJzeg/s-l400.jpg' 
+  {
+    id: 4,
+    name: "Lighters",
+    description: "6 pack of our premium lighters for every time to smoke up",
+    price: 14.99,
+    image: "https://i.ebayimg.com/images/g/nQcAAOSwVAtlJzeg/s-l400.jpg",
   },
-  { id: 5,
-    name: 'Electric Pipe', 
-    description: 'The all new electric smoking pipe to easily use any of our products', 
-    price: 69.99, 
-    image: 'https://www.weedgets.com/cdn/shop/files/BLUE.jpg?v=1696352887' 
+  {
+    id: 5,
+    name: "Electric Pipe",
+    description:
+      "The all new electric smoking pipe to easily use any of our products",
+    price: 69.99,
+    image: "https://www.weedgets.com/cdn/shop/files/BLUE.jpg?v=1696352887",
   },
-  { id: 6,
-    name: 'Travel Case', 
-    description: 'To bring all your favorite products on the go', 
-    price: 12.99, 
-    image: 'https://m.media-amazon.com/images/I/71vXgoBwNFL._AC_SL1500_.jpg' 
+  {
+    id: 6,
+    name: "Travel Case",
+    description: "To bring all your favorite products on the go",
+    price: 12.99,
+    image: "https://m.media-amazon.com/images/I/71vXgoBwNFL._AC_SL1500_.jpg",
+  },
+  {
+    id: 7,
+    name: "Rolling Papers",
+    description: "Comes in a pack of 10",
+    price: 9.99,
+    image:
+      "https://theounce.ca/wp-content/uploads/2023/02/RAW-rolling-paper-tips.jpeg",
+  },
+  {
+    id: 8,
+    name: "Weed Socks",
+    description: "A must have to show off your love for our products",
+    price: 9.99,
+    image: "https://m.media-amazon.com/images/I/61xAOJyCvvL._AC_UY1000_.jpg",
+  },
+  {
+    id: 9,
+    name: "Weed Hat",
+    description: "A must have to show off your love for our products",
+    price: 9.99,
+    image: "https://m.media-amazon.com/images/I/612OUIAojCL._AC_UY1000_.jpg",
+  },
+  {
+    id: 10,
+    name: "Weed T-shirt",
+    description: "A must have to show off your love for our products",
+    price: 9.99,
+    image:
+      "https://i.etsystatic.com/6572991/r/il/6bf019/3711096734/il_1080xN.3711096734_hw2p.jpg",
   },
 ];
 

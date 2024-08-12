@@ -10,7 +10,41 @@
   margin-right: 20px;
 }
 
-input[type=text], input[type=email], select {
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: o.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+input[type="text"],
+input[type="email"],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -20,9 +54,9 @@ input[type=text], input[type=email], select {
   box-sizing: border-box;
 }
 
-button[type=submit] {
+button[type="submit"] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -31,7 +65,7 @@ button[type=submit] {
   cursor: pointer;
 }
 
-button[type=submit]:hover {
+button[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -51,4 +85,18 @@ div {
 
 .payment-options div {
   margin-bottom: 10px;
+}
+
+.submit {
+  font-size: 1.5rem;
+}
+
+.checkout-page { /* Added checkout-page class */
+  background-color: gray;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15px;
 }

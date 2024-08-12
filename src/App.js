@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
 import Checkout from "./components/Checkout";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <ShoppingCartProvider>
@@ -16,6 +16,7 @@ function App() {
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
+        <Footer /> {/* Add the Footer component */}
       </Router>
     </ShoppingCartProvider>
   );

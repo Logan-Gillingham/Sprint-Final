@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className="header">
       <Link to="" className="site-name">
-        Pound Town
+        <span className="site-name-text">Pound Town</span>
       </Link>
       <div className="cart-container">
         <button onClick={toggleDropdown} className="cart-icon">
