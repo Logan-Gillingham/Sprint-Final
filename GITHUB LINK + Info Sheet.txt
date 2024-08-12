@@ -1,0 +1,8 @@
+
+GITHUB LINK: https://github.com/Logan-Gillingham/Sprint-Final
+
+
+Here’s a brief outline of the contributions made by each group member:
+
+Logan: Developed the product page and wrote the unit tests. Contributed to the overall styling of the website.
+Donovan: Developed the checkout page and created the Figma designs. Also contributed to the styling.
